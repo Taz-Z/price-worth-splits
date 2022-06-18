@@ -2,32 +2,26 @@ import { useCallback, useEffect, useState } from "react";
 import Navbar from "./Navbar";
 import PriceSplitter from "./PriceSplitter";
 
-
 const getTab = (tab) => {
-  switch(tab) {
-    case 1: 
-    return <PriceSplitter/>
+  switch (tab) {
+    case 1:
+      return <PriceSplitter />;
     default:
-      return <hi>hello</hi>
+      return <h1>hello</h1>;
   }
-
-}
+};
 
 const App = () => {
- 
-  const [tab, setTab] = useState(1)
+  const [tab, setTab] = useState(1);
 
   const getTabCallback = useCallback(() => {
-    return getTab(tab)
-  }, [tab])
-
-
+    return getTab(tab);
+  }, [tab]);
 
   return (
     <>
-      <Navbar />
-      {getTabCallback()}
-
+      <Navbar onClickHandler={setTab} />
+      <div className="bg-gray-700 ">{getTabCallback()}</div>
     </>
   );
 };
