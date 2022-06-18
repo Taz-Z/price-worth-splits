@@ -1,11 +1,11 @@
 import { useCallback, useEffect, useState } from "react";
+import CraftingList from "./CraftingList";
 import Navbar from "./Navbar";
-import PriceSplitter from "./PriceSplitter";
 
 const getTab = (tab) => {
   switch (tab) {
     case 1:
-      return <PriceSplitter />;
+      return <CraftingList />;
     default:
       return <h1>hello</h1>;
   }

@@ -18,14 +18,14 @@ const Navbar = ({ onClickHandler, currentSelection }) => {
             className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
             onClick={() => onClickHandler(1)}
           >
-            Bidder
+            Crafting
           </a>
           <a
             href="#responsive-header"
             className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
             onClick={() => onClickHandler(2)}
           >
-            Crafting
+            Maris
           </a>
         </div>
       </div>
