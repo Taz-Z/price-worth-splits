@@ -1,0 +1,12 @@
+{
+    "1": {
+        "name": "",
+        "qty_produced": 10,
+        "crafting_cost": 1,
+        "mats_needed": {
+            "1":3,
+            "2":3,
+            "3": 3
+        }
+    }
+}
