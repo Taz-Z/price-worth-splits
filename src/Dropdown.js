@@ -1,4 +1,4 @@
-import { useReducer, useState, useRef } from "react";
+import { useState, useRef } from "react";
 import { useClickOutside } from "./hooks";
 
 const Dropdown = ({ selected, handleOnClick }) => {
